@@ -98,40 +98,100 @@
 Kindly fill the membership form to become an offical member of the Africa Women Conference (AWC)
         </h5>
         <div class="custom-expanded u-form u-form-1">
-          <form id="form">
-            <div class="field">
+            <form id="form">
+                <div class="field">
+                  <label for="first_name">First Name </label>
+                  <input type="text" name="first_name" id="first_name">
+                </div>
+                <div class="field">
+                    <label for="Middle_name">Middle Name</label>
+                    <input type="text" name="Middle_name" id="Middle_name">
+                  </div>
+                <div class="field">
+                  <label for="last_name">Surname </label>
+                  <input type="text" name="last_name" id="last_name">
+                </div>
+                <div class="field">
+                    <label for="Gender">Gender</label>
+                    <select name="Gender" id="Gender">
+                      <option value="">Select Gender</option>
+                      <option value="Male">Male</option>
+                      <option value="Female">Female</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </div>
               
-            <div class="field">
-              <label class="" for="first_name">Frist Name  </label>
-              <input type="text" name="first_name" id="first_name">
-            </div>
-            <div class="field">
-              <label for="last_name">Surname </label>
-              <input type="text" name="last_name" id="last_name">
-            </div>
-            <div class="field">
-              <label for="location">Location</label>
-              <input type="text" name="location" id="location">
-            </div>
-            <div class="field">
-              <label for="Email">Email</label>
-              <input type="text" name="Email" id="Email">
-            </div>
-            <div class="field">
-              <label for="Phone ">Phone Number </label>
-              <input type="number" name="Phone" id="Phone">
-            </div>
-          
-            <input type="submit" id="button" value="Send Email" >
-          </form>
-          
-          <script type="text/javascript"
-            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-          
-          <script type="text/javascript">
-            emailjs.init('t5krBUt7-4_-ka-7m')
-          </script>
+               
+                <div class="field">
+                  <label for="Phone">Phone</label>
+                  <input type="text" name="Phone" id="Phone">
+                </div>
+                <div class="field">
+                  <label for="Email">Email</label>
+                  <input type="text" name="Email" id="Email">
+                </div>
+                <div class="field">
+                    <label for="Area_of_Interest">Area of Interest</label>
+                    <select name="Area_of_Interest[]" id="Area_of_Interest" multiple>
+                      <option value="policy_and_advocacy">Policy and Advocacy</option>
+                      <option value="good_health_and_wellbeing">Good Health and Well-being</option>
+                      <option value="peace_and_justice">Peace and Justice</option>
+                      <option value="entrepreneurship">Entrepreneurship</option>
+                      <option value="gender_equality">Gender Equality</option>
+                      <option value="no_poverty">No Poverty</option>
+                      <option value="quality_education">Quality Education</option>
+                      <option value="climate_action">Climate Action</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label for="Interested_Department"> Interested in joining </label>
+                    <select name="Interested_Department" id="Interested_Department">
+                      <option value="">Select </option>
+                      <option value="AWC-Next Advisory Board Team">AWC-Next Advisory Board Team</option>
+                      <option value="AWC-Next Team as a Member">AWC-Next Team as a Member</option>
+                      <option value="AWC-Next Executives">AWC-Next Executives</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label for="Open_Position">Open Position</label>
+                    <select name="Open_Position" id="Open_Position">
+                      <option value="">Select Position</option>
+                      <option value="Advisory Board Member">Advisory Board Member</option>
+                      <option value="Regional Representative, North Africa">Regional Representative, North Africa</option>
+                      <option value="Regional Representative, Central Africa">Regional Representative, Central Africa</option>
+                      <option value="Country Representative">Country Representative</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label for="What_you_will_do">What You'll Do</label>
+                    <ul>
+                      <li><input type="checkbox" name="responsibilities[]" value="Serve for 2 years"> Serve for 2 years</li>
+                      <li><input type="checkbox" name="responsibilities[]" value="Represent AWC-Next in your Country"> Represent AWC-Next in your Country</li>
+                      <li><input type="checkbox" name="responsibilities[]" value="Build and manage a team by providing impactful Leadership"> Build and manage a team by providing impactful Leadership</li>
+                      <li><input type="checkbox" name="responsibilities[]" value="Implement Advocacy movements and programs inline with The SDGs and AWC’s general Objectives"> Implement Advocacy movements and programs inline with The SDGs and AWC’s general Objectives</li>
+                      <li><input type="checkbox" name="responsibilities[]" value="Research and analyze policy issues and trends that affect young females in your Country"> Research and analyze policy issues and trends that affect young females in your Country</li>
+                      <li><input type="checkbox" name="responsibilities[]" value="Identify opportunities for collaborations"> Identify opportunities for collaborations</li>
+                      <li><input type="checkbox" name="responsibilities[]" value="Promote Africa Women Conference in your Country; drive a high membership campaign and influence a high representation of your Country in all AWC’s conferences"> Promote Africa Women Conference in your Country; drive a high membership campaign and influence a high representation of your Country in all AWC’s conferences</li>
+                    </ul>
+                  </div>
+              
+                  <div class="field">
+                    <label for="Statement"> Personal Statement</label>
+                    <input type="text" name="Statement" id="Statement">
+                  </div>
 
+
+                <input type="submit" id="button" value="Send " >
+              </form>
+              
+              <script type="text/javascript"
+                src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+              
+              <script type="text/javascript">
+                emailjs.init('t5krBUt7-4_-ka-7m')
+              </script>
+          
+         
           <style> 
 
 /* Form Styling */
